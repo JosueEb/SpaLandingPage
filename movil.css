@@ -1,0 +1,267 @@
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .contenedorNegro {
+    display: none;
+  }
+
+  .cont {
+    width: 100%;
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    border-bottom: 1px #333 dotted;
+    width: 100%;
+  }
+
+  .iconocirculo {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px #333 dotted;
+    width: 100%;
+    color: #333;
+  }
+
+  .contenedor_arriba {
+    width: 100%;
+  }
+
+  .contenedor_arriba:first-child {
+    display: none;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .redes {
+    display: none;
+  }
+}
+
+@media screen and (max-width:430px) {
+
+  /*Modales*/
+
+  .contenidomodal {
+    width: 90%;
+  }
+
+  .contindo {
+    flex-direction: column;
+  }
+
+  .contenidoDer {
+    width: 100%;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .contenidoIzq {
+    width: 100%;
+  }
+
+  .secciones {
+    flex-direction: column;
+  }
+
+  .secciones p {
+    border: 0px black dashed;
+  }
+
+  .PrimeraIzq {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PrimeraDer {
+    display: none;
+  }
+
+  /* paralax */
+  .fondolaptop {
+    background-image: url("images/Acqualina-Spa-By-ESPA-Womens-Steam-Room.jpg");
+    /* Set a specific height */
+    min-height: 350px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .filtroParalax {
+    background-color: #c91d566c;
+    height: 1050px;
+  }
+
+  .contenidoparalax {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 100%;
+  }
+
+  .contenidoparalax h2 {
+    font-size: 40px;
+  }
+
+  .ParallaxIzq {
+    width: 90%;
+    order: 2;
+  }
+
+  .paparalaxconfigura {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .iconoPar {
+    width: 90%;
+    font-size: 40px;
+  }
+
+  .textopar {
+    text-align: left;
+    width: 60%;
+  }
+
+  .paralaxDer {
+    width: 90%;
+    position: relative;
+    order: 1;
+  }
+
+  .paralaxDer figure {
+    width: 100%;
+  }
+
+  .paralaxDer figure img {
+    width: 100%;
+  }
+
+  .fotonariz {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .fotopiernas {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    display: none;
+  }
+
+  /* servicios */
+  .Servicios {
+    text-align: center;
+  }
+
+  .ContenedorServicios {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cajaServicio {
+    width: 90%;
+  }
+
+  /* portafolio */
+
+  .galleryContent {
+    flex-wrap: wrap-reverse;
+  }
+
+  .galleryPictureContainer {
+    gap: 10px;
+  }
+
+  .galleryPictureContainer a img {
+    width: 95%;
+  }
+
+  /* team */
+  .redesTeam {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .redesTeam i {
+    background-color: var(--rosa);
+    color: var(--blanco);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  /* footer */
+  .partearribaFooter {
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .formularioFooter {
+    width: 90%;
+  }
+
+  .formularioFooter input {
+    width: 50%;
+  }
+
+  .partemediaFooter{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contenidotestimonio{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .resumenTestimonio{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+  }
+  .filaForm i{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+}

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final Eb Gasca</title>
+  <!-- links css -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="movil.css">
+  <link rel="stylesheet" href="libreria_carrousel_js/carrousel.css">
+  <!-- FontAwesome -->
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+  <!-- Link hacia Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Link hacia JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <!-- Responsive Slides -->
+  <script src="js/responsiveslides.min.js"></script>
+  <link rel="stylesheet" href="imports/responsiveslides.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- carrusel -->
+  <link rel="stylesheet" href="libreria_carrousel_js/carrousel.css">
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+
+  <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<header>
+  <div class="contenedorNegro">
+    <div class="contenidoNegro ancho">
+      <div class="contacto">
+        <i class="fa-regular fa-envelope"></i>
+        <p>info@website.com</p>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Oakwwok, Los Angeles Ca 1098</p>
+      </div>
+      <div class="contacto">
+        <p>Make a Claim</p>
+        <p>Services</p>
+        <p>Solution Center</p>
+      </div>
+    </div>
+  </div>
+  <div class="cabecera ancho">
+    <div class="contenedor_arriba">
+      <div class="redes">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-google"></i>
+      </div>
+    </div>
+    <br>
+    <div class="contenedor_arriba">
+      <figure>
+        <img src="images/logo.png" alt="">
+      </figure>
+      <div class="iconocirculo" id="iconomenu">
+        <i class="fas fa-bars fa"></i>
+      </div>
+      <div class="quote">
+        <a href="#" id="abrirbtn" class="">Abrir Modal</a>
+      </div>
+    </div>
+  </div>
+  <div class="cont ancho" id="menu">
+    <nav>
+      <a href="#SeccionAbout">ABOUT</a>
+      <a href="#seccionServicios">SERVICES</a>
+      <a href="#SeccionPortafolio">PORTFOLIO</a>
+      <a href="#SeccionTeam">TEAM</a>
+      <a href="#SeccionPrecios">PRICING</a>
+      <a href="#SeccionTesimonial">TESTIMONIAL</a>
+      <a href="#SectionBlog">GALLERY</a>
+      <a href="#SectionContacto">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <p id="anclaa"></p>
+  <br>
+  <section class="fondomodal" id="modal">
+    <div class="contenidomodal">
+      <div class="filtroModal">
+        <a id="cerrarbtn">
+          <i class="marca fa-solid fa-x"></i>
+        </a>
+        <br></br>
+        <h3>Join Our Newsletter</h3>
+        <br>
+        <p>Sed porttitor lectus nibh. Curabitur arcu erat, accumsan id imperdiet et.
+        </p>
+        <form action="#">
+          <br><br>
+          <input class="correoModal" required type="text" name="" id="" placeholder="Email *">
+          <br><br><br><br>
+          <a href="#" id="cerrarbtn2" class="BtnRojoModal">Send</a>
+          <br></br>
+        </form>
+      </div>
+    </div>
+  </section>
+  <br></br>
+  <section class="PrimeraSection" id="PrimeraSection">
+    <div class="trianguloNegro ancho">
+      <article class="PrimeraIzq">
+        <br></br>
+        <div class="secciones">
+          <p>Saloon</p>
+          <p>Wax Expert</p>
+          <p>Hairdresser</p>
+        </div>
+        <br><br><br>
+        <h2>A Wide Range of Waxing Services</h2>
+        <br></br>
+        <p class="grisesito">How to full body wax</p>
+        <br><br>
+        <div class="formularioSeccionUno">
+          <form action="#">
+            <input type="text" placeholder="Enter Email Address">
+            <a href="#" class="BtnRojo">Enviar</a>
+          </form>
+        </div>
+      </article>
+      <article class="PrimeraDer">
+        <figure class="banner">
+          <img src="images/foto1.jpg" alt="">
+          <div class="filtro"></div>
+        </figure>
+      </article>
+    </div>
+  </section>
+
+  <br><br>
+  <!-- parallax -->
+
+  <section id="SeccionAbout" class="fondolaptop">
+    <div class="filtroParalax">
+      <div class="ancho contenidoparalax">
+        <article class="ParallaxIzq">
+          <br></br>
+          <h2>International wax shop</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore vero fugiat molestias accusamus beatae
+            qui accusantium inventore natus ducimus perspiciatis?</p>
+          <br></br>
+          <div class="paparalaxconfigura">
+            <div class="iconoPar">
+              <i class="fa-solid fa-soap"></i>
+            </div>
+            <div class="textopar">
+              <h4>Uper Body Waxing</h4>
+              <br>
+              <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+            </div>
+          </div>
+          <br></br>
+          <div class="paparalaxconfigura">
+            <div class="iconoPar">
+              <i class="fa-solid fa-pump-soap"></i>
+            </div>
+            <div class="textopar">
+              <h4>Uper Body Waxing</h4>
+              <br>
+              <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+            </div>
+          </div>
+        </article>
+        <article class="paralaxDer">
+          <figure class="fotonariz animate__animated animate__pulse animate__infinite">
+            <img src="images/nariz.jpg" alt="">
+          </figure>
+          <figure class="fotopiernas animate__animated animate__pulse animate__infinite">
+            <img src="images/piernas.jpg" alt="">
+          </figure>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- servicios -->
+  <section id="seccionServicios" class="Servicios">
+    <div class="ancho">
+      <br><br>
+      <p class="subtituloService">What We Do</p>
+      <br>
+      <h2 class="tituloService"><span>Our</span> Services</h2>
+      <br>
+      <div class="ContenedorServicios">
+        <article class="cajaServicio wow animate__animated animate__bounceInLeft">
+          <p class="numero">01</p>
+          <br>
+          <h3 class="NombreServicio">Under Arm Waxin</h3>
+          <br></br>
+          <div class="TituloRotar">
+            <i class="fa-solid fa-square-plus "></i>
+            <i class="fa-solid fa-square-minus ocultar"></i>
+            <h2>Read more</h2>
+          </div>
+          <div class="mostrar">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+        </article>
+        <article class="cajaServicio wow animate__animated animate__bounceInLeft">
+          <p class="numero">02</p>
+          <br>
+          <h3 class="NombreServicio">Hands & feet</h3>
+          <br></br>
+          <div class="TituloRotar">
+            <i class="fa-solid fa-square-plus "></i>
+            <i class="fa-solid fa-square-minus ocultar"></i>
+            <h2>Read more</h2>
+          </div>
+          <div class="mostrar">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+        </article>
+        <article class="cajaServicio wow animate__animated animate__bounceInLeft">
+          <p class="numero">03</p>
+          <br>
+          <h3 class="NombreServicio">Pedicure</h3>
+          <br></br>
+          <div class="TituloRotar">
+            <i class="fa-solid fa-square-plus "></i>
+            <i class="fa-solid fa-square-minus ocultar"></i>
+            <h2>Read more</h2>
+          </div>
+          <div class="mostrar">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    <br></br>
+  </section>
+
+  <!-- portafolio -->
+  <section id="SeccionPortafolio" class="ancho gallery">
+    <br></br>
+    <h2 class="tituloService"><span>Our</span> Portafolio</h2>
+    <br></br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <br></br>
+    <div class="ancho galleryContent">
+      <div class="galleryPictureContainer">
+        <a data-fancybox="gallery" data-src="images/laser.jpg" data-caption="Laser Hair Removal">
+          <img src="images/laser.jpg" alt="Photo">
+          <div class="filtro2">
+            <h2>Laser Hair Removal</h2>
+            <br>
+            <p>View more</p>
+          </div>
+        </a>
+        <a data-fancybox="gallery" data-src="images/cejas.jpg" data-caption="Gentle Hair Removal">
+          <img src="images/cejas.jpg" alt="Photo">
+          <div class="filtro2">
+            <h2>Laser Hair Removal</h2>
+            <br>
+            <p>View more</p>
+          </div>
+        </a>
+        <a data-fancybox="gallery" data-src="images/espalda.jpg" data-caption="Facial Waxin">
+          <img src="images/espalda.jpg" alt="Photo">
+          <div class="filtro2">
+            <h2>Laser Hair Removal</h2>
+            <br>
+            <p>View more</p>
+          </div>
+        </a>
+        <a data-fancybox="gallery" data-src="images/xic.jpg" data-caption="Leg Waxin">
+          <img src="images/xic.jpg" alt="Photo">
+          <div class="filtro2">
+            <h2>Laser Hair Removal</h2>
+            <br>
+            <p>View more</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <br></br>
+  <!-- team -->
+  <section id="SeccionTeam" class="ancho tean">
+    <h2 class="tituloService"><span>Our</span> Team</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+    <br>
+    <div class="contenedorCarrusel">
+
+
+      <div class="flechas">
+        <a id="back-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <a id="forward-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="ContenidoDer" id="carousel">
+        <div id="slide-container" class="contenedor_slide">
+          <article class="slide" data-slideIndex="0">
+            <figure>
+              <img src="images/persona1.jpg" alt="">
+              <p class="nombre">Andrew Simon</p>
+              <p class="puesto">Founder</p>
+              <div class="redesTeam">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </figure>
+          </article>
+          <article class="slide" data-slideIndex="1">
+            <figure>
+              <img src="images/persona2.jpg" alt="">
+              <p class="nombre">Tim Abell</p>
+              <p class="puesto">CEO</p>
+              <div class="redesTeam">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </figure>
+          </article>
+          <article class="slide" data-slideIndex="2">
+            <figure>
+              <img src="images/persona3.jpg" alt="">
+              <p class="nombre">Tomas Jhonson</p>
+              <p class="puesto">Manager</p>
+              <div class="redesTeam">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+      </div>
+    </div>
+    <br></br>
+
+
+
+  </section>
+
+  <br></br>
+  <!-- precios -->
+  <section id="SeccionPrecios" class="ancho precios">
+    <br></br>
+    <h2 class="tituloService"><span>Our</span> Pricing</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <br></br>
+    <div class="contenidoPrecios">
+      <article class="tarjetaprecio">
+        <i class="xd fa-solid fa-pump-medical"></i>
+        <p class="plan">Silver Plan</p>
+        <br>
+        <h3 class="precioPlan">$100</h3>
+        <br>
+        <p>One Time Instalation</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Bikini Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Facial Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Leg Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Underware Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Bosy Waxin</p>
+        <br></br>
+        <a href="#" class="BtnRojoModal">Purchase now</a>
+        <br></br><br>
+      </article>
+      <article class="tarjetaprecio">
+        <i class="xd2 fa-solid fa-pump-medical"></i>
+        <p class="plan2">Gold Plan</p>
+        <br>
+        <h3 class="precioPlan2">$150</h3>
+        <br>
+        <p>One Time Instalation</p>
+        <br>
+        <p class="precioPlan2"><i class="plan2 fa-solid fa-check"> </i> Bikini Waxin</p>
+        <br>
+        <p class="precioPlan2"><i class="plan2 fa-solid fa-check"> </i> Facial Waxin</p>
+        <br>
+        <p class="precioPlan2"><i class="plan2 fa-solid fa-check"> </i> Leg Waxin</p>
+        <br>
+        <p class="precioPlan2"><i class="plan2 fa-solid fa-check"> </i> Underware Waxin</p>
+        <br>
+        <p class="precioPlan2"><i class="plan2 fa-solid fa-check"> </i> Bosy Waxin</p>
+        <br></br>
+        <a href="#" class="BtnRojoModal2">Purchase now</a>
+        <br></br><br>
+      </article>
+      <article class="tarjetaprecio">
+        <i class="xd fa-solid fa-pump-medical"></i>
+        <p class="plan">Diamond Plan</p>
+        <br>
+        <h3 class="precioPlan">$199</h3>
+        <br>
+        <p>One Time Instalation</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Bikini Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Facial Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Leg Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Underware Waxin</p>
+        <br>
+        <p class="precioPlan"><i class="plan fa-solid fa-check"> </i> Bosy Waxin</p>
+        <br></br>
+        <a href="#" class="BtnRojoModal">Purchase now</a>
+        <br></br><br>
+      </article>
+    </div>
+
+    <br></br>
+  </section>
+  <br><br><br>
+  <!-- TESTIMONIAL -->
+  <section class="testimonial ancho" id="SeccionTesimonial">
+    <p class="subtituloService">Clients feedback</p>
+    <br>
+    <h2 class="tituloService">What <span> Our</span> Says</h2>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <br></br>
+    <div class="contenidotestimonio">
+      <div class="fotoTestimonio">
+        <figure>
+          <img src="images/cara.jpg" alt="">
+        </figure>
+      </div>
+      <div class="resumenTestimonio">
+        <div class="estrellas"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout.It is a long established fact that a reader will be distracted by the readable content of a page
+          when looking at its layout."
+        </p>
+        <div class="nombre">
+          <p>AASH ARON</p>
+        </div>
+        <div class="puesto">
+          <p>WEB DESIGNER</p>
+        </div>
+      </div>
+      <div class="videoTestimonio">
+        <iframe src="https://www.youtube.com/embed/cf9n56cQHqY?si=7NRt002EMSJk0hRi&amp;controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+      </div>
+    </div>
+    <br><br>
+  </section>
+  <!-- blog -->
+  <section class="blog ancho" id="SectionBlog">
+    <br>
+    <h2 class="tituloService"><span> Our</span> Gallery</h2>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <br></br>
+    <article class="callbacks_container">
+      <article class="sliderText">
+        <div class="header">
+          <h3>WHO ARE LOOKING FOR HIGH-QUEALITY SKIN CARE</h3>
+        </div>
+        <div class="footer">
+          <a class="btn" href="#">
+            <div>
+              <p>SUSCRIBE NOW</p>
+            </div>
+          </a>
+        </div>
+      </article>
+      <ul class="rslides" id="slider">
+        <li><img src="images/barba.jpg" alt="#"></li>
+        <li><img src="images/cara.jpg" alt="#"></li>
+        <li><img src="images/brazo.jpg" alt="#"></li>
+      </ul>
+    </article>
+    <br><br><br>
+  </section>
+  <br><br><br>
+  <section class="contact" id="SectionContacto">
+    <div class="formulario">
+      <br>
+      <h2 class="tituloService">Send A <span> Message</span> </h2>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      <br></br>
+      <form action="#" class="FormContacto">
+        <div class="filaForm">
+          <input id="nombre" class="entrada" type="text" placeholder="full name">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <br><br>
+        <div class="filaForm">
+          <input id="email" class="entrada" type="text" placeholder="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <br><br>
+        <div class="filaForm">
+          <input id="mensaje" class="entrada" type="text" placeholder="Leave Us a Message">
+        </div>
+        <br><br>
+        <a onclick="validarFormulario()" id="cerrarbtn2" class="BtnRojoModal">Send</a>
+        <br><br><br>
+      </form>
+    </div>
+  </section>
+</body>
+<footer>
+  <br>
+  <div class="ancho">
+    <div class="partearribaFooter">
+      <figure>
+        <img src="images/logo.png" alt="">
+      </figure>
+      <div class="formularioFooter">
+        <form action="#">
+          <input type="text" placeholder="Enter Email Address">
+          <a href="#" class="BtnRojo">Enviar</a>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="partemediaFooter">
+      <div class="OurContact">
+        <h2>Our Contact</h2>
+        <br>
+        <br>
+        <p>example@email.com</p>
+        <br>
+        <p>+8888888888888</p>
+        <br>
+        <p>60 Grant Ave. Central new Road</p>
+        <div class="redesFooter">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <br>
+      </div>
+      <div class="solutions">
+        <h2>Solutions</h2>
+        <br>
+        <p>Marketing</p>
+        <br>
+        <p>Analytics</p>
+        <br>
+        <p>Ecommers</p>
+        <br>
+        <p>Insights</p>
+        <br>
+        <p>Insights</p>
+      </div>
+      <div class="solutions">
+        <h2>Company</h2>
+        <br>
+        <p>Home</p>
+        <br>
+        <p>About</p>
+        <br>
+        <p>Blog</p>
+        <br>
+        <p>Contacts</p>
+        <br>
+        <p>Portfolio</p>
+      </div>
+    </div>
+    <br>
+    <p><i class="fa-regular fa-copyright"></i> Laserpro - 2021</p>
+    <a class="flechaArriba" href="#anclaa"><i class="fa-solid fa-arrow-up-long"></i></a>
+
+    <br>
+  </div>
+
+</footer>
+
+</html>
+<script>
+  function validarFormulario() {
+    // Obtener valores de los campos
+    var nombre = document.getElementById('nombre').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var mensaje = document.getElementById('mensaje').value.trim();
+
+    if (nombre === '' || email === '' || mensaje === '') {
+      alert('Por favor, complete todos los campos.');
+      return;
+    }
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor, ingrese un correo electrónico válido.');
+      return;
+    }
+
+    alert('Formulario válido. Puedes enviar los datos al servidor.');
+  }
+</script>
+<script>
+  //funciones del menu
+  $("#iconomenu").click(function () {
+    $("#menu").slideToggle();
+  });
+</script>
+
+<script>
+  //Función del modal
+  document.addEventListener("DOMContentLoaded", function () {
+    // Función del modal
+    var fondo = document.getElementById("modal");
+
+    $("#abrirbtn").click(function () {
+      fondo.style.display = "flex";
+    });
+
+    $("#cerrarbtn").click(function () {
+      fondo.style.display = "none";
+    });
+
+    window.onclick = function (event) {
+      if (event.target == fondo) {
+        fondo.style.display = "none";
+      }
+    };
+
+    // Mostrar el modal después de 15 segundos
+    setTimeout(function () {
+      fondo.style.display = "flex";
+    }, 15000); // 15000 milisegundos = 15 segundos
+  });
+</script>
+
+<script>
+  // Acordeon
+  $(".fa-square-minus").hide();
+
+  $(".TituloRotar").click(function () {
+    // Encuentra el contenedor del ícono
+    var masIcono = $(this).find(".fa-square-plus");
+    var menosIcono = $(this).find(".fa-square-minus");
+
+    // Rota el contenedor del ícono
+    masIcono.toggle();
+    menosIcono.toggle();
+
+    // Abre o cierra el elemento siguiente (.mostrar) al elemento clicado
+    $(this).next(".mostrar").slideToggle();
+
+    // Agrega o quita la clase rotar al h2
+    $(this).find("h2").toggleClass("rotar");
+
+    // Verifica si el acordeón se está cerrando para mostrar el ícono plus
+    if ($(this).next(".mostrar").is(":hidden")) {
+      masIcono.show();
+      menosIcono.hide();
+    }
+  });
+</script>
+
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script>
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+</script>
+<!-- carrusel -->
+<script src="libreria_carrousel_js/carrousel.js"></script>
