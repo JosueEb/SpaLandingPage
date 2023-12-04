@@ -263,5 +263,12 @@
     top: 10px;
     right: 20px;
   }
+  .formulario {
+    width: 90%;
+    text-align: center;
+  }
+  .contenidoPrecios {
+    gap: 40px;
+  }
 
 }
